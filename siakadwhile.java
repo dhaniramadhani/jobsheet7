@@ -11,12 +11,13 @@ public class siakadwhile {
             System.out.println("Masukan Nilai Mahasiswa: ");
             nilai = s.nextInt();
             if (nilai < 0 || nilai > 100) {
-                System.out.println("Nilai Tidak Valid, Masukan Nilai Ynag Valid");
+                System.out.println("Nilai Tidak Valid, Masukan Nilai Yang Valid");
                 continue;
             }
 
             if (nilai > 80 && nilai <= 100){
                 System.out.println("Nilai Mahasiswa Ke- "+( i+1)+" adalah A");
+                System.out.println("Bagus, pertahankan nilainya");
             }
             else if (nilai > 73 && nilai <=80) {
                 System.out.println("Nilai Mahasiswa Ke- "+( i+1)+" adalah B+");
@@ -35,8 +36,9 @@ public class siakadwhile {
             }
             else{
                  System.out.println("Nilai Mahasiswa Ke- "+( i+1)+" adalah E");
+                
             }
-
+            i++;
         }
     }
 }
